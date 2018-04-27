@@ -1,7 +1,7 @@
-import Nav from '@/components/navigation/navigation';
+import navigation from '@/components/navigation/navigation';
 
 export default {
 name: 'app',
-components:[Nav]
+components:{navigation}
 };
 

@@ -1,0 +1,30 @@
+<div class="search-list">
+  <br>
+  <div class="card" v-for="item in resultCollection">
+    <div class="card-header">
+      <h5> {{item.name}}</h5>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Verdict:</strong> {{item.verdict}}</p>
+      <p>
+        <strong>**{{item.snippet}}**</strong>
+      </p>
+      <h6>Avoid the following</h6>
+      <ul>
+        <li v-for="avoidItem in item.avoidCollection">
+          {{avoidItem}}
+        </li>
+      </ul>
+      <h6>Safe to eat</h6>
+      <ul>
+        <li v-for="safeItem in item.safeCollection">
+          {{safeItem}}
+        </li>
+      </ul>
+      <p class="card-text" v-html="item.description"></p>
+      <h6 class="card-subtitle mb-2 text-muted">source: {{item.source}}</h6>
+
+    </div>
+  </div>
+</div>

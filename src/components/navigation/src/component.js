@@ -1,4 +1,11 @@
+import Data from '../../../data/data';
+
 export default {
-name: 'navigation'
+name: 'navigation',
+data(){
+    return {
+        state: Data
+    }
+}
 };
 

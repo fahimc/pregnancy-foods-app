@@ -1,0 +1,57 @@
+{
+    "items": [
+        {
+            "name": "Cheese",
+            "source": "NHS",
+            "alias": [
+                "soft cheese",
+                "hard cheese",
+                "cheddar",
+                "paneer"
+            ],
+            "verdict": "with caution",
+            "snippet": "Make sure the cheese is made from  pasteurised milk.",
+            "description": "<strong>Soft cheeses with white rinds</strong><br><br>\nDon't eat mould-ripened soft cheese (cheeses with a white rind) such as brie and camembert. This includes mould-ripened soft goats' cheese, such as chèvre. These cheeses are only safe to eat in pregnancy if they've been cooked.\n<br><br>\nSoft blue cheeses\nYou should also avoid soft blue-veined cheeses such as danish blue, gorgonzola and roquefort. Soft blue cheeses are only safe to eat in pregnancy if they've been cooked.\n<br><br>\nIt's advised pregnant women avoid some soft cheeses because they're less acidic than hard cheeses and contain more moisture, which means they can be an ideal environment for harmful bacteria, such as listeria, to grow in.\n<br><br>\nAlthough infection with listeria (listeriosis) is rare, it's important to take special precautions in pregnancy – even a mild form of the illness in a pregnant woman can lead to miscarriage, stillbirth or severe illness in a newborn baby.\n<br><br>\nFind out about the symptoms of listeria. If you're pregnant and showing signs of listeria infection, seek medical help straight away.",
+            "safeCollection": [
+                "cottage cheese",
+                "mozzarella",
+                "feta",
+                "cream cheese",
+                "paneer",
+                "ricotta",
+                "halloumi",
+                "goats' cheese",
+                "processed cheeses, such as cheese spreads"
+            ],
+            "avoidCollection": [
+                "brie and blue brie",
+                "camembert",
+                "chèvre(a type of goats’ cheese)",
+                "Danish blue",
+                "gorgonzola",
+                "roquefort"
+            ]
+        },
+        {
+            "name": "Eggs",
+            "source": "NHS",
+            "alias": [
+                "omelette",
+                "fried egg",
+                "pouched egg",
+                "egg yolk",
+                "egg white"
+            ],
+            "verdict": "with caution",
+            "snippet": "Avoid some raw or partially cooked eggs. Only eat eggs with the stamp of British Lion Code of Practice",
+            "description": "Some eggs are produced under a food safety standard called the British Lion Code of Practice. Eggs produced in this way have a logo stamped on their shell, showing a red lion.\n<br><br>\nLion Code eggs are considered very low risk for salmonella, and safe for pregnant women to eat raw or partially cooked. So you can eat raw hen eggs or food containing lightly cooked hen eggs (such as soft boiled eggs, mousses, soufflés and fresh mayonnaise) provided that the eggs are produced under the Lion Code.\n<br><br>\nIf they are not Lion Code, make sure eggs are thoroughly cooked until the whites and yolks are solid to prevent the risk of salmonella food poisoning. Salmonella food poisoning is unlikely to harm your baby, but it can give you a severe bout of diarrhoea and vomiting.\n<br><br>\nIf you don't know whether the eggs used are Lion Code or not (for example in a restaurant or cafe), ask the staff or, to be on the safe side, you can follow the advice for non-Lion Code eggs.\n<br><br>\nNon-hen eggs such as duck, goose and quail eggs should always be cooked thoroughly.",
+            "safeCollection": [
+                "British Lion Code of Practice stamped eggs"
+            ],
+            "avoidCollection": [
+                "raw eggs",
+                "partially cooked eggs"
+            ]
+        }
+    ]
+}
