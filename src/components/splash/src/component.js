@@ -31,7 +31,6 @@ export default {
   methods:{
       onLoaded(data){
           Data.collection = data.items;
-
           setTimeout(() => {
               router.push('home');   
           }, 1000);
