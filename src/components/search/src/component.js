@@ -12,7 +12,7 @@ export default {
     onKeyUp(event) {
       if(event.keyCode == 13){
         setTimeout(()=> {
-          this.$el.querySelector('input').focus();
+          this.$el.parentNode.querySelector('h1').focus();
         },50);
       }
         EventBus.$emit('SEARCH_RESULT', this.state.search);
