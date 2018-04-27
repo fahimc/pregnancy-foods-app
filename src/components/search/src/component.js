@@ -15,7 +15,10 @@ export default {
           document.querySelector('a').focus();
         },50);
       }
-        EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
+        //EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
+    },
+    onSearch(){
+      EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
     }
   }
 };
