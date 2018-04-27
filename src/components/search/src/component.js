@@ -15,7 +15,7 @@ export default {
           document.querySelector('a').focus();
         },50);
       }
-        EventBus.$emit('SEARCH_RESULT', this.state.search);
+        EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
     }
   }
 };
