@@ -25,7 +25,6 @@ export default {
       if (data.length < 2) return;
       Data.collection.forEach((item) => {
         let nameSimilarity = this.similarity(data.toLowerCase(), item.name.toLowerCase());
-
         let found = false;
         if (this.isSimilar(name, data)) {
           found = true;
@@ -53,7 +52,7 @@ export default {
     isSimilar(itemA, itemB) {
       let accuracy = 0.6;
       let similarity = this.similarity(itemB.toLowerCase(), itemA.toLowerCase());
-      return (similarity >= accuracy || itemA.indexOf(itemB) >= 0);
+      return (similarity >= accuracy || itemA.toLowerCase().indexOf(itemB.toLowerCase()) >= 0);
     },
     addItemToCollection(item) {
       this.resultCollection.push(item);

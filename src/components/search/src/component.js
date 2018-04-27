@@ -9,15 +9,18 @@ export default {
     }
   },
   methods: {
-    onKeyUp(event) {
-      if(event.keyCode == 13){
-        setTimeout(()=> {
+    onKeyPress(event) {
+      if (event.keyCode == 13) {
+        setTimeout(() => {
           document.querySelector('a').focus();
-        },50);
+        }, 50);
       }
-        //EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
+    },
+    onKeyUp(event) {
+      EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
     },
     onSearch(){
+      
       EventBus.$emit('SEARCH_RESULT', this.$el.querySelector('input').value);
     }
   }
