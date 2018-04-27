@@ -1,14 +1,14 @@
 .navigation {
+  a {
+    &:focus {
+      outline: none;
+    }
+  }
   .logo {
-  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
-
-
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
     background: linear-gradient(to right, #8e44ad 0%, #c0392b 100%);
-
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     width: auto;
     display: inline-block;
     position: relative;
