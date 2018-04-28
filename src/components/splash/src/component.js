@@ -43,6 +43,8 @@ export default {
     onSpreadsheetLoaded(data, tabletop) {
       let items = [];
         data.forEach((row,index) => {
+          let safeValue = this.getValueByString(row, 'safe');
+          let avoidValue = this.getValueByString(row, 'avoid');
             let item = {
                 name: this.getValueByString(row,'name'),
                 source: this.getValueByString(row, 'source'),
@@ -50,8 +52,8 @@ export default {
                 verdict: this.getValueByString(row, 'verdict'),
                 snippet: this.getValueByString(row, 'important'),
                 description: this.getValueByString(row, 'description').replace(/\\n/g, ''),
-                safeCollection: this.getValueByString(row, 'safe').split(','),
-                avoidCollection: this.getValueByString(row, 'avoid').split(',')
+                safeCollection: safeValue ? safeValue.split(','):[],
+                avoidCollection: avoidValue ? avoidValue.split(','): []
             }
             items.push(item);
         });

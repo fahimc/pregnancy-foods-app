@@ -8,16 +8,16 @@
       <p>
         <strong>Verdict:</strong> {{item.verdict}}</p>
       <p>
-        <strong>**{{item.snippet}}**</strong>
+        <strong v-if="item.snippet">**{{item.snippet}}**</strong>
       </p>
-      <h6>Avoid the following</h6>
-      <ul>
+      <h6 v-if="isEmpty(item.avoidCollection)">Avoid the following</h6>
+      <ul v-if="isEmpty(item.avoidCollection)">
         <li v-for="avoidItem in item.avoidCollection">
           {{avoidItem}}
         </li>
       </ul>
-      <h6>Safe to eat</h6>
-      <ul>
+      <h6 v-if="isEmpty(item.safeCollection)">Safe to eat</h6>
+      <ul v-if="isEmpty(item.safeCollection)">
         <li v-for="safeItem in item.safeCollection">
           {{safeItem}}
         </li>

@@ -92,6 +92,9 @@ export default {
           costs[s2.length] = lastValue;
       }
       return costs[s2.length];
+    },
+    isEmpty(item){
+      return item.length > 0;
     }
   }
 };
