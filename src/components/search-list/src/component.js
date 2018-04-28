@@ -24,11 +24,8 @@ export default {
       this.resultCollection = [];
       if (data.length < 2) return;
       Data.collection.forEach((item) => {
-        let nameSimilarity = this.similarity(data.toLowerCase(), item.name.toLowerCase());
-        let found = false;
-        if (this.isSimilar(name, data)) {
-          found = true;
-        } else {
+        let found = this.isSimilar(item.name, data);
+        if (!found) {
 
           found = this.checkCollection(item.alias, data, found);
           found = this.checkCollection(item.safeCollection, data, found);
